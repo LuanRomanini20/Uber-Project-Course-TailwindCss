@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+    --color-principal: #121063;
+    --color-secundaria: #3ab7bf;
+
+    --background-image-uber: url('./assets/bguber.png');
+  }
