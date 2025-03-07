@@ -4,5 +4,6 @@
     --color-principal: #121063;
     --color-secundaria: #3ab7bf;
 
-    --background-image-uber: url('./assets/bguber.png');
+    --background-image-uber: url('/assets/bguber.png');
+    --background-image-city: url('/assets/bg-city.png');
   }
