@@ -214,6 +214,9 @@
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
   .block {
     display: block;
   }
@@ -354,9 +357,6 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
-  .py-10 {
-    padding-block: calc(var(--spacing) * 10);
-  }
   .py-11 {
     padding-block: calc(var(--spacing) * 11);
   }
@@ -403,6 +403,9 @@
   .underline {
     text-decoration-line: underline;
   }
+  .opacity-80 {
+    opacity: 80%;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -414,6 +417,16 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .hover\:scale-95 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 95%;
+        --tw-scale-y: 95%;
+        --tw-scale-z: 95%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
   }
   .hover\:scale-105 {
     &:hover {
@@ -439,6 +452,13 @@
       }
     }
   }
+  .hover\:opacity-100 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 100%;
+      }
+    }
+  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
@@ -454,12 +474,6 @@
       padding-block: calc(var(--spacing) * 11);
     }
   }
-  .sm\:text-4xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-  }
   .md\:mx-2 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 2);
@@ -468,12 +482,6 @@
   .md\:my-2 {
     @media (width >= 48rem) {
       margin-block: calc(var(--spacing) * 2);
-    }
-  }
-  .md\:text-4xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
   .md\:text-base {
